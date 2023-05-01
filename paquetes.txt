@@ -1,0 +1,19 @@
+1.instalar Django
+2.Instalar djangorestframework para la api.
+3.instalar django-cors-headers para asignarle quien puede entrar a nuestro backends
+4.instalar coreapi
+
+-----------react------------
+1.npm i react-router-dom = para tener multiples paginas en el front
+2.npm i react-hot-toast = modeulo para notificaciones personalizadas
+3.npm i axios = para hacer peticiones
+4.npm i react-hook-form = validar los campos desde el front
+
+-crear las paginas que se van a mostrar
+-crear cada componente por separado para tener un orden y poder llamarlos en distintas paginas
+-crear la carpeta de api para las peticiones
+
+
+---------tailwinds--------------
+1.npm install -D tailwindcss postcss autoprefixer
+2.npx tailwindcss init -p
