@@ -2,6 +2,8 @@
 2.Instalar djangorestframework para la api.
 3.instalar django-cors-headers para asignarle quien puede entrar a nuestro backends
 4.instalar coreapi
+5.instalar gunicorn para desplegar
+6.instalar whitenoise para los archivos estaticos
 
 -----------react------------
 1.npm i react-router-dom = para tener multiples paginas en el front
