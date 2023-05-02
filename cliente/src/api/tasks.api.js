@@ -16,7 +16,7 @@ export const getAllTasks = () => {
 }
 
 export const getTask = (id) => {
-    return urlApi.get('/'+id+"/")
+    return urlApi.get(`/${id}`)
 }
 
 export const createTask = (task) =>{
@@ -24,9 +24,9 @@ export const createTask = (task) =>{
 }
 
 export const deleteTask = (id) =>{
-    return urlApi.delete('/'+id)
+    return urlApi.delete(`/${id}`)
 }
 
 export const updateTask = (id,task) =>{
-    return urlApi.put('/'+id+"/",task)
+    return urlApi.put(`/${id}/`,task)
 }
