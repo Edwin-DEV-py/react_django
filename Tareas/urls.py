@@ -21,6 +21,6 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('AppTarea.urls')),
+    path('tasks/',include('AppTarea.urls')),
     path('',TemplateView.as_view(template_name="index.html"),name="index")
 ]
