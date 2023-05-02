@@ -4,7 +4,7 @@ import axios from 'axios'
 //    process.env.NODE_ENV === "production" ? import.meta.env.VITE_BACKEND_URL : "http://127.0.0.1:8000";
 
 const urlApi = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api/tasks/' //funciona en desarrollo
+    baseURL: 'https://drf-crud-eoi7.onrender.com/api/proyectos/' //funciona en desarrollo
     //baseURL: `${URL}/tasks/api/tasks/`, //para producion y desarrollo
 })
 
