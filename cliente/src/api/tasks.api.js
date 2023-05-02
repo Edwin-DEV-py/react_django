@@ -3,7 +3,7 @@ import axios from 'axios'
 const URL =
     process.env.NODE_ENV === "production"
         ? import.meta.env.VITE_BACKEND_URL
-            : "http://localhost:8000";
+            : "http://127.0.0.1:8000";
 
 const urlApi = axios.create({
     //baseURL: 'http://127.0.0.1:8000/api/tasks/' funciona en desarrollo
