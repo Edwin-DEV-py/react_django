@@ -12,7 +12,7 @@ const urlApi = axios.create({
 
 //esto pide los datos al backend
 export const getAllTasks = () => {
-    return urlApi.get('/')
+    return urlApi.get('')
 }
 
 export const getTask = (id) => {
