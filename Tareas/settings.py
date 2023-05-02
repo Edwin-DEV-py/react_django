@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r6!_p^-!w4_&4c@s*em(&*e+0$!1vqg^plch%xg8^chuoxo8tt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://web-production-1e7a4.up.railway.app/",'127.0.0.1',"localhost"]
+ALLOWED_HOSTS = ["web-production-1e7a4.up.railway.app",'127.0.0.1',"localhost"]
 
 
 # Application definition
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'Tareas.wsgi.application'
 
 DATABASES = {
     "default":
-    dj_database_url.config(default="sqlite:///" +os.path.join(BASE_DIR, "db.sqlite3"))
+    dj_database_url.config(default="sqlite:///" +os.path.join(BASE_DIR, "db.sqlite3"))#en desarrollo me usa esta
 }
 
 # Password validation

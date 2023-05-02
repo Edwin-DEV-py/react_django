@@ -4,6 +4,7 @@
 4.instalar coreapi
 5.instalar gunicorn para desplegar
 6.instalar whitenoise para los archivos estaticos
+7.instalar psycopg2 para usar postgres
 
 -----------react------------
 1.npm i react-router-dom = para tener multiples paginas en el front
