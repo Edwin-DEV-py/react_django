@@ -149,8 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #definimos que servidor se puede conectar a nuestra app
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
 
-CORS_ORIGIN_WHITELIST = ['http://localhost:5173']
-
 #autodocumentacion
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
