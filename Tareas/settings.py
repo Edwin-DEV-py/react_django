@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'corsheaders',#eel cors sirve para comunicarse con otro bbackend
     'rest_framework',
     'coreapi',
@@ -90,7 +91,7 @@ WSGI_APPLICATION = 'Tareas.wsgi.application'
 
 DATABASES = {
     "default":
-    dj_database_url.config(default="sqlite:///"+os.path.join(BASE_DIR, "db.sqlite3"))#en desarrollo me usa esta
+    dj_database_url.config(default="sqlite:///" +os.path.join(BASE_DIR, "db.sqlite3"))#en desarrollo me usa esta
 }
 
 # Password validation
@@ -132,7 +133,8 @@ STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'cliente', 'dist')
+    # Tell Django where to look for React's static files (css, js)
+    os.path.join(BASE_DIR, "client", "dist")
 ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" #guardar en memoria cache
@@ -146,6 +148,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #definimos que servidor se puede conectar a nuestra app
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
+
+CORS_ORIGIN_WHITELIST = ['http://localhost:5173']
 
 #autodocumentacion
 REST_FRAMEWORK = {
