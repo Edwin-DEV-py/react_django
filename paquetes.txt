@@ -16,6 +16,7 @@
 -crear cada componente por separado para tener un orden y poder llamarlos en distintas paginas
 -crear la carpeta de api para las peticiones
 
+-con npm run build creamos la carpeta dist
 
 ---------tailwinds--------------
 1.npm install -D tailwindcss postcss autoprefixer

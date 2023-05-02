@@ -62,7 +62,7 @@ ROOT_URLCONF = 'Tareas.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'cliente','dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'Tareas.wsgi.application'
 
 DATABASES = {
     "default":
-    dj_database_url.config(default="sqlite://db.sqlite3")#en desarrollo me usa esta
+    dj_database_url.config(default="sqlite:///"+os.path.join(BASE_DIR, "db.sqlite3"))#en desarrollo me usa esta
 }
 
 # Password validation
@@ -131,6 +131,9 @@ STATIC_URL = "static/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'cliente', 'dist')
+]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" #guardar en memoria cache
 
