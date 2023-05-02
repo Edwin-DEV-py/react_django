@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [
     # Tell Django where to look for React's static files (css, js)
-    os.path.join(BASE_DIR, "client", "dist")
+    os.path.join(BASE_DIR, "cliente", "dist")
 ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" #guardar en memoria cache
