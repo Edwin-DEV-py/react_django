@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'Tareas.wsgi.application'
 
 DATABASES = {
     "default":
-    dj_database_url.config(default="sqlite:///" +os.path.join(BASE_DIR, "db.sqlite3"))#en desarrollo me usa esta
+    dj_database_url.config(default="sqlite://db.sqlite3")#en desarrollo me usa esta
 }
 
 # Password validation
