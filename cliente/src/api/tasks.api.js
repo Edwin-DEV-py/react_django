@@ -5,7 +5,7 @@ const URL =
 
 const urlApi = axios.create({
     //baseURL: 'http://127.0.0.1:8000/api/tasks/' funciona en desarrollo
-    baseURL: `${URL}/api/tasks/`, //para producion y desarrollo
+    baseURL: `${URL}/tasks/api/tasks/`, //para producion y desarrollo
 })
 
 //esto pide los datos al backend
